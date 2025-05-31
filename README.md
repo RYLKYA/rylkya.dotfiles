@@ -1,5 +1,11 @@
-HEY! That's me, yes, the "quantos ghz?" guy. 
+HEY! That's me, yes, the "quantos ghz?" guy.
+
+
+
 Just passing to say that I love this linux comunity and I want to express my gratidude with some meaningless images.
+
+
+
 ![IMG_7342](https://github.com/user-attachments/assets/26d8bf36-7946-40ff-b5c5-01df70e269e7)
 ![1image](https://github.com/user-attachments/assets/10895e67-3833-4f20-b1e0-b1a0326175db)
 ![3image](https://github.com/user-attachments/assets/828842a2-8341-492b-b52a-11235f0b33cd)
