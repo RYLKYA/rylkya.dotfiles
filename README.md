@@ -6,7 +6,7 @@ Just passing to say that I love this linux comunity and I want to express my gra
 
 
 
-![IMG_7342](https://github.com/user-attachments/assets/26d8bf36-7946-40ff-b5c5-01df70e269e7)
+![IMG_7342](https://github.com/user-attachments/assets/e65ccd2a-4efa-4fbe-b67f-82b92a4edd15)
 
 
 
@@ -27,6 +27,10 @@ Just passing to say that I love this linux comunity and I want to express my gra
 
 
 ![image_2](https://github.com/user-attachments/assets/907f5182-54f8-4b53-8383-eacbafab0a04)
+
+
+
+![IMG_7449](https://github.com/user-attachments/assets/1d2fd938-5b0f-4e58-85a7-cbb02e31db63)
 
 
 
