@@ -1,0 +1,193 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 0,
+  "spacing": 0,
+  "margin-top": 20,
+  "margin-bottom": -10,
+  "margin-left": 200,
+  "margin-right": 200,
+
+  "modules-left": [
+    "sway/workspaces",
+    "hyprland/workspaces",
+ ],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "mpris",
+    "tray",
+    "pulseaudio"
+    //"network"
+    //"network#speed"
+  ],
+  "sway/workspaces": {
+    "all-outputs": true,
+    "warp-on-scroll": true,
+    "enable-bar-scroll": true,
+    "disable-scroll-wraparound": false,
+    "format": "{icon}",
+    // "format-icons": {
+    //   "1": "•",
+    //   "2": "II",
+    //   "3": "III",
+    //   "4": "IV",
+    //   "5": "V",
+    //   "6": "VI",
+    //   "7": "VII",
+    //   "8": "VIII",
+    //   "9": "IX",
+    //   "10": "X"
+    // },
+    // "format-icons": {
+    //   "1": "•",
+    //   "2": "२",
+    //   "3": "३",
+    //   "4": "४",
+    //   "5": "५",
+    //   "6": "६",
+    //   "7": "७",
+    //   "8": "८",
+    //   "9": "९",
+    //   // "10": "०"
+    //   "10": "१०"
+    // },
+  },
+
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "warp-on-scroll": true,
+    "enable-bar-scroll": true,
+    "disable-scroll-wraparound": false,
+    "format": " {icon} ",
+    "format-icons": {
+      //"urgent": "",
+      //"active": "",
+      //"default": ""
+    }
+  },
+
+  "sway/window": {
+    "format": "{app_id}",
+    "separate-outputs": true,
+    "icon":true
+  },
+
+  "hyprland/window": {
+    "format": "{app_id}",
+    "separate-outputs": true,
+    "icon":true
+  },
+
+  "sway/scratchpad": {
+    "format": "  {count}",
+    "show-empty": false,
+    "format-icons": ["", " "],
+    "tooltip": true,
+    "tooltip-format": "{app}: {title}"
+  },
+  "network": {
+    "format-wifi": "{icon} {essid}  {bandwidthDownBytes}",
+    "format-ethernet": "󰈀",
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤢 ", "󰤨 "],
+    "format-disconnected": "󰪎",
+    "interval": 5,
+    "tooltip-format-wifi": " {bandwidthDownBytes} |  {bandwidthUpBytes} | {essid}",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "exec ~/.config/rofi/wifi/wifi.sh",
+    "on-click-right": "ghostty -e nmtui"
+  },
+  "network#speed": {
+    "interval": 1,
+    "format": "{ifname}%%",
+    "format-wifi": " {bandwidthDownBytes}",
+    "format-ethernet": " {bandwidthDownBytes}  {bandwidthUpBytes} ",
+    "format-disconnected": "󰌙",
+    "tooltip-format": "{ipaddr}",
+    "format-linked": "󰈁 {ifname} (No IP)",
+    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "tooltip-format-ethernet": "{ifname} 󰌘",
+    "tooltip-format-disconnected": "󰌙 Disconnected",
+    "max-length": 22,
+    "min-length": 20,
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+  },
+  "disk": {
+    "format": "   {free}",
+    "interval": 20
+  },
+  "cpu": {
+    "interval": 1,
+    "format": "<span font='Font Awesome 6 Free-Solid'>\uf2db</span>  {usage}%",
+    "on-click": "ghostty btop"
+  },
+  "temperature": {
+    "tooltip":false,
+    "thermal-zone": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    "critical-threshold": 70,
+    "format": " {temperatureC}°C",
+    "format-critical": "{temperatureC}°C "
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "scroll-step": 5,
+    "format": "{icon}{percent}",
+    "format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "],
+    "tooltip": true,
+    "tooltip-format": "{percent}%"
+  },
+  "memory": {
+    "interval": 1,
+    "format": "<span font='Font Awesome 5 Free'>\uf538</span>  {percentage}%",
+    "on-click": "ghostty btop",
+    "tooltip-format": "{used}/{total} GiB"
+  },
+  "pulseaudio": {
+    "format": "<span font='Font Awesome 5 Free'>{icon}</span>  {volume}",
+    "format-muted": "<span font='Font Awesome 5 Free'>\uf6a9</span>",
+    "format-icons": {
+      "headphone": "\uf025",
+      "default": ["\uf028"]
+    },
+    "tooltip-format": "{volume}% {desc}",
+    "on-click": "pamixer -t"
+  },
+  "battery": {
+    "interval": 1,
+    "states": {
+      "good": 99,
+      "warning": 30,
+      "critical": 20
+    },
+    "format-icons": ["󰂎","󰁺","󰁻","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+    "format": "{icon} {capacity}%",
+    "format-critical": "{icon} {capacity}%!!",
+    "format-warning": "{icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-charging": "󰂅 {capacity}%",
+    "format-charging-warning": "󰢝 {capacity}%",
+    "format-charging-critical": "󰢜 {capacity}%",
+    "format-plugged": " 󰂅  {capacity}%",
+    "format-alt": " 󱧥  {time}",
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%I:%M %p • %a, %b %d}",
+    "tooltip": true,
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+  
+  "mpris": {
+	"format": "{player_icon} {dynamic}",
+	"format-paused": "{status_icon} <i>{dynamic}</i>",
+	"player-icons": {
+		"default": "▶",
+		"mpv": "🎵"
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	// "ignored-players": ["firefox"]
+  } 
+}
