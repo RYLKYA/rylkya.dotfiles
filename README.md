@@ -30,8 +30,6 @@ Just passing to say that I love this linux comunity and I want to express my gra
 
 
 
-![IMG_7449](https://github.com/user-attachments/assets/1d2fd938-5b0f-4e58-85a7-cbb02e31db63)
-
 
 
 ![5image](https://github.com/user-attachments/assets/b559c0d8-7ab2-4b52-b6da-d066ce9e1ec2)
