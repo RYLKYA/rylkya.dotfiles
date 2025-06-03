@@ -27,11 +27,6 @@
             "keyColor": "red"
         },
         {
-            "type": "gpu",
-            "key": "GPU",
-            "keyColor": "red"
-        },
-        {
             "type": "memory",
             "key": "RAM",
             "keyColor": "red"

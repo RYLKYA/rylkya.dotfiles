@@ -13,7 +13,6 @@ window#waybar {
 #clock,
 #tray,
 #battery,
-#mpris,
 #cpu,
 #window,
 #memory,
@@ -96,8 +95,8 @@ window#waybar {
   color: #e0af68;
 }
 
-#network {
-  color: #FFFFFF;
+#tray {
+  padding: 0px 4px;
 }
 
 #pulseaudio {

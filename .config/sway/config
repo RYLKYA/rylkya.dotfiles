@@ -257,6 +257,7 @@ shadow_offset 8 8
 default_dim_inactive 0.1
 for_window [app_id="kitty"] blur enable
 for_window [app_id=".*"] border pixel 0
+for_window [app_id="zen"] blur enable
 for_window [app_id="kitty"] border pixel 2
 
 blur_radius 6

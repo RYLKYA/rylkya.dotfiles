@@ -14,7 +14,7 @@
  ],
   "modules-center": ["clock"],
   "modules-right": [
-    "mpris",
+    "mrpis",
     "tray",
     "pulseaudio"
     //"network"
@@ -111,9 +111,9 @@
     "min-length": 20,
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
   },
-  "disk": {
-    "format": "   {free}",
-    "interval": 20
+  "tray": {
+    "icon-size": "18",
+    "spacing": 4
   },
   "cpu": {
     "interval": 1,
@@ -179,8 +179,8 @@
   },
   
   "mpris": {
-	"format": "{player_icon} {dynamic}",
-	"format-paused": "{status_icon} <i>{dynamic}</i>",
+	"format": "DEFAULT: {player_icon} {dynamic}",
+	"format-paused": "DEFAULT: {status_icon} <i>{dynamic}</i>",
 	"player-icons": {
 		"default": "▶",
 		"mpv": "🎵"
@@ -189,5 +189,5 @@
 		"paused": "⏸"
 	},
 	// "ignored-players": ["firefox"]
-  } 
+  }
 }
